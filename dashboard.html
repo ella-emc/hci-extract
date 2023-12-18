@@ -91,6 +91,56 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- CONTAINER FOR THE ANALYTICS DISPLAY -->
+                <div class="container-3">
+                    <h4>Your expense analytics</h4>
+                    <div class="analytics-container">
+                        <div class="dropdown-date">
+                            <div class="dropdown-analytics">
+                                <select id="timeperiod" onchange="displayExpensePeriod(this)">
+                                    <option value="d" selected>Daily</option>
+                                    <option value="w">Weekly</option>
+                                    <option value="m">Monthly</option>
+                                    <option value="y">Yearly</option>
+                                  </select>
+                            </div>
+                            <h4 id="expense-period"></h4>
+                        </div>
+
+                        <div class="analytics-graph">
+                            <img src="/assets/Group 481714.png">
+                            <ul>
+                                <li>Food</li>
+                                <li>Credit/Debit</li>
+                                <li>Utility</li>
+                                <li>Transportation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-nav">
+                <div class="home-container">
+                    <img id="home-icon" src="/assets/home (1).png" alt="Food icon" onclick="displayHome()">
+                    <div>Home</div>
+                </div>
+
+                <div class="calculator-container">
+                    <img id="calculator-icon" src="/assets/calculator.png" alt="calculator icon" onclick="displayHome()">
+                    <div>Calculator</div>
+                </div>
+
+                <div class="expenses-container">
+                    <img id="wallet-icon" src="/assets/wallet (1).png" alt="wallet icon" onclick="displayHome()">
+                    <div>My Expenses</div>
+                </div>
+
+                <div class="profile-container">
+                    <img id="user-icon" src="/assets/circle-user (1).png" alt="user icon" onclick="displayHome()">
+                    <div>Profile</div>
+                </div>
             </div>
         </div>
         <!-- <img src="/assets/Android-nav-bar.png"> -->
