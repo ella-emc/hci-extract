@@ -115,13 +115,20 @@ option {
 
 /* SUBCONTAINER-RIGHT COMPONENTS */
 .subcontainer-right img {
-    width: 68.772px;
-    height: 84.136px;
+    width: 72px;
+    height: 86px;
     flex-shrink: 0;
 }
 
 .calendar-content {
-    display: flex;
+    position: absolute;
+    top: 50%; 
+    left: 48%; 
+    transform: translate(-50%, -50%); 
+    color: #000000; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
 }
 
 .calendar-content div {
@@ -130,12 +137,13 @@ option {
 }
 
 #month {
+    padding-top: 6px;
     font-size: 11px;
     font-weight: 800;
 }
 
 #date {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 800;
 }
 
