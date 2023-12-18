@@ -2,6 +2,7 @@ p {
     font-family: 'Inter';
 }
 
+/* CONTAINERS*/
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -11,12 +12,50 @@ p {
     flex-shrink: 0;
 }
 
+.main-content {
+    background: linear-gradient(358deg, rgba(254, 254, 254, 0.10) 75.87%, rgba(138, 79, 255, 0.10) 100.85%), #FFF;
+}
+
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 118px;
+}
+
+.subcontainer {
+    border-radius: 8.779px;
+    background: linear-gradient(128deg, rgba(138, 79, 255, 0.50) 49.92%, rgba(255, 165, 217, 0.50) 94.32%), linear-gradient(225deg, rgba(85, 255, 173, 0.00) -25.61%, #ECB1D3 36.74%);
+    box-shadow: 0px 2.195px 36.581px 0px rgba(240, 220, 232, 0.25);
+    width: 256px;
+    height: 98px;
+    flex-shrink: 0;
+}
+
+/*END OF CONTAINERS*/
+
+
+
 .extract-logo {
     display: flex;
+    flex-direction: row;
+    gap: 8px;
 }
 
 .extract-logo img {
     width: 20.024px;
     height: 24.645px;
+    flex-shrink: 0;
+}
+
+.extract-logo p {
+    margin: 0;
+    font-weight: 900;
+}
+
+.settings-icon img {
+    width: 12.438px;
+    height: 12.438px;
     flex-shrink: 0;
 }
