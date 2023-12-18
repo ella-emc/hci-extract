@@ -43,21 +43,21 @@ function displayDate() {
 
 function displayExpensePeriod() {
     const period = document.getElementById("timeperiod").value;
+    const month = date.getMonth();
+    let periodNow;
 
     if (period == "d") {
-        let periodNow = `${months_full[date.getMonth()]} ${date.getDate().toString()}, ${date.getFullYear().toString()}`;  
-        document.getElementById("expense-period").innerHTML = periodNow;
+        periodNow = `${months_full[date.getMonth()]} ${date.getDate().toString()}, ${date.getFullYear().toString()}`;  
     } else if (period == "w") {
-        let month = date.getMonth();
         let weekEnd = date.getDate();
         let weekStart = weekEnd - 7;
         
         if (weekStart < 1) {
             switch (month) {
-                case 1, 3, 5, 7, 8, 10, 12:
+                case 0, 2, 4, 6, 7, 9, 11:
                     weekStart = 31 - (7-weekEnd);
                     break;
-                case 2: 
+                case 1: 
                     // This does not consider leap years
                     weekStart = 28 -(7-weekEnd);
                     break;
@@ -67,6 +67,28 @@ function displayExpensePeriod() {
             }
         }
 
-        let periodNow = `${months_full[date.getMonth()]} ${weekStart}-${weekEnd}, ${date.getFullYear().toString()}`;  
+        periodNow = `${months_full[date.getMonth()]} ${weekStart}-${weekEnd}, ${date.getFullYear().toString()}`;  
+    } else if (period == "m") {
+        let monthStart = "1";
+        let monthEnd;
+        switch (month) {
+            case 0, 2, 4, 6, 7, 9, 11:
+                monthEnd = "31";
+                break;
+            case 1: 
+                // This does not consider leap years
+                monthEnd = "28";
+                break;
+            default:
+                monthEnd = "30";
+                break;
+        }
+
+        periodNow = `${months_full[month]} ${monthStart}-${monthEnd}, ${date.getFullYear().toString()}`;
+    } else {
+        periodNow = `${months_full[0]}-${months_full[11]} ${date.getFullYear().toString()}`;
     }
+
+    document.getElementById("expense-period").innerHTML = periodNow;
+
 }
