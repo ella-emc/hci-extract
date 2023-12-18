@@ -1,0 +1,22 @@
+p {
+    font-family: 'Inter';
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    height: 38.507px;
+    flex-shrink: 0;
+}
+
+.extract-logo {
+    display: flex;
+}
+
+.extract-logo img {
+    width: 20.024px;
+    height: 24.645px;
+    flex-shrink: 0;
+}
