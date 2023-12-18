@@ -1,4 +1,4 @@
-p {
+p, h1, h4 {
     font-family: 'Inter';
 }
 
@@ -21,22 +21,26 @@ p {
     align-items: center;
     justify-content: center;
     width: inherit;
-    height: 118px;
+    height: 126px;
 }
 
 .subcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
     border-radius: 8.779px;
     background: linear-gradient(128deg, rgba(138, 79, 255, 0.50) 49.92%, rgba(255, 165, 217, 0.50) 94.32%), linear-gradient(225deg, rgba(85, 255, 173, 0.00) -25.61%, #ECB1D3 36.74%);
     box-shadow: 0px 2.195px 36.581px 0px rgba(240, 220, 232, 0.25);
     width: 256px;
     height: 98px;
     flex-shrink: 0;
+    overflow: hidden;
 }
 
 /*END OF CONTAINERS*/
 
 
-
+/* NAVBAR COMPONENTS */
 .extract-logo {
     display: flex;
     flex-direction: row;
@@ -59,3 +63,26 @@ p {
     height: 12.438px;
     flex-shrink: 0;
 }
+/*END OF NAVBAR COMPONENTS*/
+
+
+/* SUBCONTAINER-LEFT COMPONENTS */
+.expense-display h4, .expense-display h1 {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.expense-display h4 {
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.expense-display h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+/* END OF SUBCONTAINER-LEFT COMPONENTS */
+
+
+
+/* DROPDOWN */
