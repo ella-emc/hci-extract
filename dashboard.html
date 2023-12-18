@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExTract - Dashboard</title>
     <link rel="icon" href="/assets/logo_black.png">
+    <script src="/src/js/dashboard.js" async defer></script>    
     <link rel="stylesheet" href="/src/styles.css"> <!-- Style only includes centering the frame and adding frame and body styles -->
     <link rel="stylesheet" href="/src/dashboard_styles.css"> <!-- Style includes styles to elements native to this page -->
 </head>
@@ -28,7 +29,30 @@
             <div class="main-content">
                 <div class="container-1">
                     <div class="subcontainer">
+                        <div class="subcontainer-left">
+                            <div class="dropdown">
+                                <select id="period" onchange="displayExpenses(this)">
+                                    <option value="0" selected>Daily</option>
+                                    <option value="1">Weekly</option>
+                                    <option value="2">Monthly</option>
+                                    <option value="3">Yearly</option>
+                                  </select>
+                            </div>
 
+                            <div class="expense-display">
+                                <h4>Your expense is</h4>
+                                <h1 id="expense">Php 0.00</h1>
+                            </div>
+                        </div>
+
+                        <div class="subcontainer-right">
+                            <img src="/assets/calendar_purple.png" alt="Calendar icon">
+                            <div class="calendar-content">
+                                <div id="month"></div>
+                                <div id="date"></div>
+                                <div id="day"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

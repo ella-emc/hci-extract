@@ -1,4 +1,4 @@
-p {
+p, h1, h4 {
     font-family: 'Inter';
 }
 
@@ -21,22 +21,37 @@ p {
     align-items: center;
     justify-content: center;
     width: inherit;
-    height: 118px;
+    height: 126px;
 }
 
 .subcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
     border-radius: 8.779px;
     background: linear-gradient(128deg, rgba(138, 79, 255, 0.50) 49.92%, rgba(255, 165, 217, 0.50) 94.32%), linear-gradient(225deg, rgba(85, 255, 173, 0.00) -25.61%, #ECB1D3 36.74%);
     box-shadow: 0px 2.195px 36.581px 0px rgba(240, 220, 232, 0.25);
     width: 256px;
     height: 98px;
     flex-shrink: 0;
+    overflow: hidden;
+}
+
+.subcontainer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subcontainer-right {
+    position: relative;
+    display: inline-block;
 }
 
 /*END OF CONTAINERS*/
 
 
-
+/* NAVBAR COMPONENTS */
 .extract-logo {
     display: flex;
     flex-direction: row;
@@ -59,3 +74,85 @@ p {
     height: 12.438px;
     flex-shrink: 0;
 }
+/*END OF NAVBAR COMPONENTS*/
+
+
+/* SUBCONTAINER-LEFT COMPONENTS */
+select {
+    background: none;
+    border-radius: 9px;
+    border: 2px solid white; /* Add white border */
+    border-radius: 9px;
+    color: white; /* Set text color to white */
+    font-family: 'Inter';
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px;
+}
+
+option {
+    font-family: 'Inter';
+    font-size: 12px;
+    color: #6236aa;
+}
+
+.expense-display h4, .expense-display h1 {
+    margin: 1px;
+    color: #FFFFFF;
+}
+
+.expense-display h4 {
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.expense-display h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+/* END OF SUBCONTAINER-LEFT COMPONENTS */
+
+
+/* SUBCONTAINER-RIGHT COMPONENTS */
+.subcontainer-right img {
+    width: 72px;
+    height: 86px;
+    flex-shrink: 0;
+}
+
+.calendar-content {
+    position: absolute;
+    top: 50%; 
+    left: 48%; 
+    transform: translate(-50%, -50%); 
+    color: #000000; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+}
+
+.calendar-content div {
+    font-family: 'Inter';
+    color: #000000;
+}
+
+#month {
+    padding-top: 6px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+#date {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#day {
+    font-size: 8px;
+    font-weight: 400;
+}
+/* END OF SUBCONTAINER-RIGHT COMPONENTS */
+
+
+
+/* DROPDOWN */
