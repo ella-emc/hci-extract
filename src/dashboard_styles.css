@@ -1,3 +1,15 @@
+/* HIDING SCROLLBAR*/
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main-content {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 p, h1, h4 {
     font-family: 'Inter';
 }
@@ -22,6 +34,11 @@ p, h1, h4 {
     justify-content: center;
     width: inherit;
     height: 126px;
+    padding: 16px 0;
+}
+
+.container-2 {
+    height: 100px;
 }
 
 .subcontainer {
@@ -46,6 +63,32 @@ p, h1, h4 {
 .subcontainer-right {
     position: relative;
     display: inline-block;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    gap: 28px;
+}
+
+.food-container,
+.utility-container,
+.debit-credit-container,
+.transportation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.analytics-container {
+    border-radius: 25px;
+    fill: #FFF;
+    box-shadow: 0px 2px 8px #00000040;    width: inherit;
+    padding: 16px;
 }
 
 /*END OF CONTAINERS*/
@@ -78,7 +121,7 @@ p, h1, h4 {
 
 
 /* SUBCONTAINER-LEFT COMPONENTS */
-select {
+.dropdown select {
     background: none;
     border-radius: 9px;
     border: 2px solid white; /* Add white border */
@@ -154,5 +197,78 @@ option {
 /* END OF SUBCONTAINER-RIGHT COMPONENTS */
 
 
+/* CONTAINER-2 COMPONENTS */
+h4 {
+    margin: 8px 0;
+}
+/* END OF CONTAINER-2 COMPONENTS */
 
-/* DROPDOWN */
+
+/* CATEGORY-CONTAINER ELEMENTS */
+.food-container div,
+.utility-container div,
+.debit-credit-container div,
+.transportation-container div {
+    font-family: 'Inter';
+    font-size: 11px;
+    font-weight: 500;
+    white-space: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 42px;
+}
+
+.food-container span,
+.utility-container span,
+.debit-credit-container span,
+.transportation-container span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #9663fd26;
+}
+
+.food-container img,
+.utility-container img,
+.debit-credit-container img,
+.transportation-container img {
+    height: 20px;
+    width: 20px;
+}
+/* END OF CATEGORY-CONTAINER ELEMENTS */
+
+
+/* ANALYTICS-CONTAINER ELEMENTS */
+.dropdown-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-analytics select {
+    background: none;
+    border-radius: 9px;
+    border: 2px solid #a8a8a8; /* Add white border */
+    border-radius: 9px;
+    color: #9e9e9e; /* Set text color to white */
+    font-family: 'Inter';
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px;
+}
+
+#expense-period {
+    color: #9e9e9e;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.45px;
+}
+/* END OF ANALYTICS-CONTAINER ELEMENTS */
