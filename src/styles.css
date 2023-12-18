@@ -1,6 +1,12 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .frame {
-    width: 388px;
-    height: 760px;
+    width: 300.36px;
+    height: 650px;
     border-radius: 40px;
     border: 10px black ridge;
     position: relative;
