@@ -6,9 +6,8 @@
 }
 html,
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0px;
+  height: 100%;
 }
 /* a blue color as a generic focus style */
 button:focus-visible {
