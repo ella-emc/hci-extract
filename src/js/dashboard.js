@@ -66,9 +66,10 @@ function displayExpensePeriod() {
                     weekStart = 30 - (7-weekEnd);
                     break;
             }
-        }
-
-        periodNow = `${months_full[date.getMonth()-1]} ${weekStart}-${months_full[date.getMonth()]} ${weekEnd}, ${date.getFullYear().toString()}`;  
+            periodNow = `${months_full[date.getMonth()-1]} ${weekStart}-${months_full[date.getMonth()]} ${weekEnd}, ${date.getFullYear().toString()}`;  
+        } else {
+            periodNow = `${months_full[date.getMonth()]} ${weekStart}-${weekEnd}, ${date.getFullYear().toString()}`;  
+        }       
     } else if (period == "m") {
         let monthStart = "1";
         let monthEnd;
