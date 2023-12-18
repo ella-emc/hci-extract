@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame {
+    width: 300.36px;
+    height: 650px;
+    border-radius: 40px;
+    border: 10px black ridge;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
