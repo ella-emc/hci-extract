@@ -16,16 +16,19 @@ p, h1, h4 {
 
 /* CONTAINERS*/
 .nav-bar {
+    padding: 2px 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: inherit;
     height: 38.507px;
     flex-shrink: 0;
+    background: #FFF;
+    box-shadow: -1px -10.243px 27.07px 8px rgba(0, 0, 0, 0.25);
 }
 
 .main-content {
-    background: linear-gradient(358deg, rgba(254, 254, 254, 0.10) 75.87%, rgba(138, 79, 255, 0.10) 100.85%), #FFF;
+    background: linear-gradient(358deg, #fefefe1a 75.87%, rgba(138, 79, 255, 0.10) 100.85%), #FFF;
 }
 
 .container-1 {
@@ -89,6 +92,17 @@ p, h1, h4 {
     fill: #FFF;
     box-shadow: 0px 2px 8px #00000040;    width: inherit;
     padding: 16px;
+}
+
+.bottom-nav {
+    background: #FFF;
+    box-shadow: 0px 10.243px 27.07px 0px rgba(0, 0, 0, 0.25);    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+    height: 64px;
+    width: inherit;
+
 }
 
 /*END OF CONTAINERS*/
@@ -243,6 +257,10 @@ h4 {
 
 
 /* ANALYTICS-CONTAINER ELEMENTS */
+.analytics-graph {
+    display: flex;
+}
+
 .dropdown-date {
     display: flex;
     flex-direction: row;
@@ -271,4 +289,35 @@ h4 {
     line-height: normal;
     letter-spacing: 0.45px;
 }
+
+.analytics-graph img {
+    height: 120px;
+    width: 120px;
+}
 /* END OF ANALYTICS-CONTAINER ELEMENTS */
+
+
+/* BOTTOM-NAV COMPONENTS */ 
+.bottom-nav img {
+    height: 20px;
+    width: 20px;
+}
+
+.home-container,
+.calculator-container,
+.expenses-container,
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-nav div {
+    color: #2b2b2b;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 10px;
+}
+/* END OF BOTTOM-NAV COMPONENTS */ 
