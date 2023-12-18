@@ -16,7 +16,7 @@ p, h1, h4 {
 
 /* CONTAINERS*/
 .nav-bar {
-    padding: 2px 14px;
+    padding: 2px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +42,10 @@ p, h1, h4 {
 
 .container-2 {
     height: 100px;
+}
+
+.container-3 {
+    padding: 14px 0;
 }
 
 .subcontainer {
@@ -95,14 +99,15 @@ p, h1, h4 {
 }
 
 .bottom-nav {
+    margin-top: 32px;
     background: #FFF;
-    box-shadow: 0px 10.243px 27.07px 0px rgba(0, 0, 0, 0.25);    display: flex;
+    box-shadow: -2px 2px 27.07px 0px rgba(0, 0, 0, 0.25);    
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 12px;
-    height: 64px;
+    padding: 14px 12px;
+    height: auto;
     width: inherit;
-
 }
 
 /*END OF CONTAINERS*/
