@@ -41,7 +41,7 @@ function displayDate() {
     console.log("day is fetched");
 }
 
-function displayExpenseAnalytics() {
+function displayExpensePeriod() {
     const period = document.getElementById("timeperiod").value;
 
     if (period == "d") {
