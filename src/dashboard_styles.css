@@ -37,6 +37,17 @@ p, h1, h4 {
     overflow: hidden;
 }
 
+.subcontainer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subcontainer-right {
+    position: relative;
+    display: inline-block;
+}
+
 /*END OF CONTAINERS*/
 
 
@@ -67,8 +78,26 @@ p, h1, h4 {
 
 
 /* SUBCONTAINER-LEFT COMPONENTS */
+select {
+    background: none;
+    border-radius: 9px;
+    border: 2px solid white; /* Add white border */
+    border-radius: 9px;
+    color: white; /* Set text color to white */
+    font-family: 'Inter';
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px;
+}
+
+option {
+    font-family: 'Inter';
+    font-size: 12px;
+    color: #6236aa;
+}
+
 .expense-display h4, .expense-display h1 {
-    margin: 0;
+    margin: 1px;
     color: #FFFFFF;
 }
 
@@ -82,6 +111,47 @@ p, h1, h4 {
     font-weight: 700;
 }
 /* END OF SUBCONTAINER-LEFT COMPONENTS */
+
+
+/* SUBCONTAINER-RIGHT COMPONENTS */
+.subcontainer-right img {
+    width: 72px;
+    height: 86px;
+    flex-shrink: 0;
+}
+
+.calendar-content {
+    position: absolute;
+    top: 50%; 
+    left: 48%; 
+    transform: translate(-50%, -50%); 
+    color: #000000; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+}
+
+.calendar-content div {
+    font-family: 'Inter';
+    color: #000000;
+}
+
+#month {
+    padding-top: 6px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+#date {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#day {
+    font-size: 8px;
+    font-weight: 400;
+}
+/* END OF SUBCONTAINER-RIGHT COMPONENTS */
 
 
 
