@@ -1,3 +1,4 @@
+// Global variables
 const date = new Date();
 const months_short = ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const months_full = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -91,4 +92,24 @@ function displayExpensePeriod() {
 
     document.getElementById("expense-period").innerHTML = periodNow;
 
+}
+
+function displayAnalytics() {
+
+}
+
+function displayHome() {
+
+}
+
+function displayCalculator() {
+
+}
+
+function displayAddExpenses() {
+
+}
+
+function displayProfile() {
+    
 }
