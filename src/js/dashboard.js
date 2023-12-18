@@ -1,5 +1,14 @@
+const date = new Date();
+const months_short = ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const months_full = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const days = ["Mon", "Tue", "Wed", "Thurs", "Fri", "Sat", "Sun"];
+
+
 window.onload = function() {
     displayDate();
+    let periodNow = `${months_full[date.getMonth()]} ${date.getDate().toString()}, ${date.getFullYear().toString()}`;  
+    document.getElementById("expense-period").innerHTML = periodNow;
+
 };
 
 function displayExpenses() {
@@ -21,12 +30,8 @@ function displayExpenses() {
 function displayDate() {
     console.log("Display date is called");
 
-    const date = new Date();
-    const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    const days = ["Mon", "Tue", "Wed", "Thurs", "Fri", "Sat", "Sun"];
-    
-    let month = months[date.getMonth()];
-    let dateNow = date.getDate().toString().toUpperCase();
+    let month = months_short[date.getMonth()];
+    let dateNow = date.getDate().toString();
     let dayNow = days[date.getDay()-1].toUpperCase();
 
     document.getElementById("month").innerHTML = month;
@@ -34,4 +39,34 @@ function displayDate() {
     console.log("date is fetched");
     document.getElementById("day").innerHTML = dayNow;
     console.log("day is fetched");
+}
+
+function displayExpensePeriod() {
+    const period = document.getElementById("timeperiod").value;
+
+    if (period == "d") {
+        let periodNow = `${months_full[date.getMonth()]} ${date.getDate().toString()}, ${date.getFullYear().toString()}`;  
+        document.getElementById("expense-period").innerHTML = periodNow;
+    } else if (period == "w") {
+        let month = date.getMonth();
+        let weekEnd = date.getDate();
+        let weekStart = weekEnd - 7;
+        
+        if (weekStart < 1) {
+            switch (month) {
+                case 1, 3, 5, 7, 8, 10, 12:
+                    weekStart = 31 - (7-weekEnd);
+                    break;
+                case 2: 
+                    // This does not consider leap years
+                    weekStart = 28 -(7-weekEnd);
+                    break;
+                default:
+                    weekStart = 30 - (7-weekEnd);
+                    break;
+            }
+        }
+
+        let periodNow = `${months_full[date.getMonth()]} ${weekStart}-${weekEnd}, ${date.getFullYear().toString()}`;  
+    }
 }
