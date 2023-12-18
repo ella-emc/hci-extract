@@ -68,7 +68,7 @@ function displayExpensePeriod() {
             }
         }
 
-        periodNow = `${months_full[date.getMonth()]} ${weekStart}-${weekEnd}, ${date.getFullYear().toString()}`;  
+        periodNow = `${months_full[date.getMonth()-1]} ${weekStart}-${months_full[date.getMonth()]} ${weekEnd}, ${date.getFullYear().toString()}`;  
     } else if (period == "m") {
         let monthStart = "1";
         let monthEnd;
@@ -111,5 +111,5 @@ function displayAddExpenses() {
 }
 
 function displayProfile() {
-    
+
 }
