@@ -84,5 +84,14 @@ p, h1, h4 {
 /* END OF SUBCONTAINER-LEFT COMPONENTS */
 
 
+/* SUBCONTAINER-RIGHT COMPONENTS */
+.subcontainer-right img {
+    width: 68.772px;
+    height: 84.136px;
+    flex-shrink: 0;
+}
+/* END OF SUBCONTAINER-RIGHT COMPONENTS */
+
+
 
 /* DROPDOWN */
