@@ -1,0 +1,9 @@
+.frame {
+    width: 388px;
+    height: 760px;
+    border-radius: 40px;
+    border: 10px black ridge;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
