@@ -18,6 +18,6 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.content {
-    padding: 8px 14px;
+.main-content {
+    padding: 0px 14px;
 }
