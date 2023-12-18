@@ -37,6 +37,12 @@ p, h1, h4 {
     overflow: hidden;
 }
 
+.subcontainer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /*END OF CONTAINERS*/
 
 
@@ -67,8 +73,26 @@ p, h1, h4 {
 
 
 /* SUBCONTAINER-LEFT COMPONENTS */
+select {
+    background: none;
+    border-radius: 9px;
+    border: 2px solid white; /* Add white border */
+    border-radius: 9px;
+    color: white; /* Set text color to white */
+    font-family: 'Inter';
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px;
+}
+
+option {
+    font-family: 'Inter';
+    font-size: 12px;
+    color: #6236aa;
+}
+
 .expense-display h4, .expense-display h1 {
-    margin: 0;
+    margin: 1px;
     color: #FFFFFF;
 }
 
