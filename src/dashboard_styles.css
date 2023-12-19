@@ -14,6 +14,11 @@ p, h1, h4 {
     font-family: 'Inter';
 }
 
+.headline {
+    font-weight: 600;
+    font-size: 16px;
+}
+
 /* CONTAINERS*/
 .nav-bar {
     padding: 2px 16px;
@@ -92,14 +97,18 @@ p, h1, h4 {
 }
 
 .analytics-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border-radius: 25px;
     fill: #FFF;
     box-shadow: 0px 2px 8px #00000040;    width: inherit;
     padding: 16px;
+    height: 170px;
 }
 
 .bottom-nav {
-    margin-top: 32px;
+    margin-top: 8px;
     background: #FFF;
     box-shadow: -2px 2px 27.07px 0px rgba(0, 0, 0, 0.25);    
     display: flex;
@@ -262,8 +271,45 @@ h4 {
 
 
 /* ANALYTICS-CONTAINER ELEMENTS */
+.list {
+    font-size: 10px;
+    font-family: 'Inter';
+    color: #262626;
+}
+
+.list p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.bullet1, .bullet2, .bullet3, .bullet4 {
+    display: inline-block;
+    width: 8px; /* Adjust the size of the bullet */
+    height: 8px;
+    border-radius: 2px; /* Make it circular */
+    margin-right: 5px; 
+}
+
+.bullet1 { 
+    background-color: #B6E3E7;
+}
+
+.bullet2 {
+    background-color: #F2CED7;
+}
+
+.bullet3 {
+    background-color: #E1D6D6;
+}
+
+.bullet4 {
+    background-color: #B6E3E7;
+}
+
 .analytics-graph {
     display: flex;
+    align-items: end;
+    justify-content: space-between;
 }
 
 .dropdown-date {
