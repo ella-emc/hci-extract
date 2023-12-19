@@ -130,7 +130,7 @@ function displayHome() {
 async function displayCalculator() {
     try {
         // Fetch the content from another HTML page
-        const response = await fetch('testNewFrame.html');
+        const response = await fetch('calculator.html');
         const html = await response.text();
 
         // Create a temporary element to hold the fetched HTML
@@ -138,7 +138,7 @@ async function displayCalculator() {
         tempElement.innerHTML = html;
 
         // Extract the specific element you want
-        const specificElement = tempElement.querySelector('#newContent');
+        const specificElement = tempElement.querySelector('#calculator-content');
 
         // Insert the specific element into the target element
         document.getElementById("frame").innerHTML = specificElement.outerHTML;
