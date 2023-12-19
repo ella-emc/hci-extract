@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="src/dashboard_styles.css"> <!-- Style includes styles to elements native to this page -->
 </head>
 <body>
-    <div class="frame">
+    <div class="frame" id="frame">
         <!-- <img src="assets/Android-status-bar.png"> -->
-        <div class="content">
+        <div class="content" id="content">
             <!-- THIS PART IS FOR THE NAVIGATION BAR -->
             <div class="nav-bar">
                 <div class="extract-logo">
@@ -134,17 +134,17 @@
                 </div>
 
                 <div class="calculator-container">
-                    <img id="calculator-icon" src="assets/calculator.png" alt="calculator icon" onclick="displayHome()">
+                    <img id="calculator-icon" src="assets/calculator.png" alt="calculator icon" onclick="displayCalculator()">
                     <div>Calculator</div>
                 </div>
 
                 <div class="expenses-container">
-                    <img id="wallet-icon" src="assets/wallet (1).png" alt="wallet icon" onclick="displayHome()">
+                    <img id="wallet-icon" src="assets/wallet (1).png" alt="wallet icon" onclick="displayAddExpenses()">
                     <div>My Expenses</div>
                 </div>
 
                 <div class="profile-container">
-                    <img id="user-icon" src="assets/circle-user (1).png" alt="user icon" onclick="displayHome()">
+                    <img id="user-icon" src="assets/circle-user (1).png" alt="user icon" onclick="displayProfile()">
                     <div>Profile</div>
                 </div>
             </div>
