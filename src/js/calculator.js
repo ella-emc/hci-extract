@@ -9,7 +9,7 @@ async function displayHome() {
         tempElement.innerHTML = html;
 
         // Extract the specific element you want
-        const specificElement = tempElement.querySelector('#frame');
+        const specificElement = tempElement.querySelector('#content');
 
         // Insert the specific element into the target element
         document.getElementById("frame").innerHTML = specificElement.outerHTML;
