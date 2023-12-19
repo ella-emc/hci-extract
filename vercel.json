@@ -1,0 +1,7 @@
+{
+    "entrypoint": "home.html",
+    "routes": {
+      "/about": "about.html",
+      "/contact": "contact.html"
+    }
+  }
