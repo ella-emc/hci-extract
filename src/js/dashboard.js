@@ -96,8 +96,32 @@ function displayExpensePeriod() {
 }
 
 function displayAnalytics() {
+    const graph = document.getElementById("graph");
+    const selected = document.getElementById("timeperiod").value;
 
+    if (selected == "w") {
+        graph.src = "assets/weekly.png";
+    } else if (selected == "m") {
+        graph.src = "assets/monthly.png";
+    } else if (selected == "y") {
+        graph.src = "assets/yearly.png";
+    }
 }
+
+
+/*
+function changeImage() {
+            // Get the image element by its ID
+            var imageElement = document.getElementById("myImage");
+
+            // Check if the image element is found
+            if (imageElement) {
+                // Change the source attribute to the new image
+                imageElement.src = "new_image.jpg";
+                imageElement.alt = "New Image";
+            }
+        }
+*/
 
 function displayHome() {
 
