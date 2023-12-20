@@ -14,6 +14,7 @@
             justify-content: center;
             margin: 0;
             height: 100vh;
+            font-family: 'Inter';
         }
 
         .iphone11frame {
@@ -163,17 +164,32 @@
         }
 
         .Rectangle11 {
-
             margin-top: -68px;
             margin-left: -58px;
-
         }
 
+        .iphone11frame .tooltiptext {
+            visibility: hidden;
+            width: inherit;
+            background-color: none;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding-left: 25px;
+
+            position: absolute;
+            z-index: 10;
+        }
+
+        .iphone11frame:hover .tooltiptext {
+            visibility: visible;
+        }
     </style>
 </head>
 
 <body>
-    <div class="iphone11frame">
+    
+    <a href="loginFB2.html"><div class="iphone11frame">
         <div class="screen">
             <div class="Frame1BlankFields"
                 style="width: 300.36px; height: 650px; position: relative; background: linear-gradient(181deg, #9663FD 39%, #FFE5FE 100%, #FF28F5 100%), linear-gradient(68deg, rgba(255, 255, 255, 0) 0%, rgba(66.04, 54.44, 186.65, 0.30) 100%), linear-gradient(324deg, rgba(255, 255, 255, 0) 0%, rgba(85, 255, 173.40, 0.30) 100%); border-radius: 20px; overflow: hidden">
@@ -223,7 +239,7 @@
                     or continue with</div>
                 <div class="DonTHaveAnAccountYet"
                     style="width: 145px; height: 11px; left: 126px;  top: 695px; position: absolute; text-align: center; color: #303030; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">
-                   Don’t have an account yet?</div>
+                Don’t have an account yet?</div>
                 <div class="Frame12" style="padding: 10px; left: 80px; top: 602px; position: absolute"></div>
                 <img class="fb"
                     style="width: 46px; height: 45\6px; left: 75px; top: 612px; position: absolute; border-radius: 20px"
@@ -258,9 +274,8 @@
                     style="width: 220px; height: 25px; left: 88px; top: 712px; position: absolute; text-align: center; color: #FF28F5; font-size: 15px; font-family: Inter; font-weight: 700; letter-spacing: 1.50px; word-wrap: break-word">
                     Create an account</div>
             </div>
-
         </div>
-    </div>
+    </div></a>
 </body>
 
 </html>

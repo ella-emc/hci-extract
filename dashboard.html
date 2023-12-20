@@ -8,11 +8,10 @@
     <script src="src/js/dashboard.js" async defer></script>    
     <link rel="stylesheet" href="src/styles.css"> <!-- Style only includes centering the frame and adding frame and body styles -->
     <link rel="stylesheet" href="src/dashboard_styles.css"> <!-- Style includes styles to elements native to this page -->
-    <link rel="stylesheet" href="src/css/calculator_styles.css">
 
 </head>
 <body>
-    <div class="frame" id="frame">
+    <div class="frame">
         <!-- <img src="assets/Android-status-bar.png"> -->
         <div class="content" id="content">
             <!-- THIS PART IS FOR THE NAVIGATION BAR -->
@@ -131,22 +130,22 @@
 
             <div class="bottom-nav">
                 <div class="home-container">
-                    <img id="home-icon" src="assets/home (1).png" alt="Food icon" onclick="displayHome()">
+                    <img id="home-icon" src="assets/home (1).png" alt="Home icon">
                     <div>Home</div>
                 </div>
 
                 <div class="calculator-container">
-                    <img id="calculator-icon" src="assets/calculator.png" alt="calculator icon" onclick="displayCalculator()">
+                    <a href="calculator.html"><img id="calculator-icon" src="assets/calculator.png" alt="calculator icon"></a>
                     <div>Calculator</div>
                 </div>
 
                 <div class="expenses-container">
-                    <img id="wallet-icon" src="assets/wallet (1).png" alt="wallet icon" onclick="displayAddExpenses()">
+                    <a href="expenses.html"><img id="wallet-icon" src="assets/wallet (1).png" alt="wallet icon"></a>
                     <div>My Expenses</div>
                 </div>
 
                 <div class="profile-container">
-                    <img id="user-icon" src="assets/circle-user (1).png" alt="user icon" onclick="displayProfile()">
+                    <a href="profile.html"><img id="user-icon" src="assets/circle-user (1).png" alt="user icon"></a>
                     <div>Profile</div>
                 </div>
             </div>
