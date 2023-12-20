@@ -1,3 +1,4 @@
 {
-    "entrypoint": "login.html"
+    "entrypoint": "login.html",
+    "cleanURLS": true
 }
