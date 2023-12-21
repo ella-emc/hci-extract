@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/css/monthly_styles.css">
+    <title>ExTract - Monthly Expenses</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="content">
+            <!-- THIS PART IS FOR THE NAVIGATION BAR -->
+            <div class="nav">
+                <a href="dashboard.html"><img src="assets/angle-left.png"></a>
+                <div>My Expenses</div>
+            </div>
+
+            <div class="main-content" id="main-content">
+                <div class="categories">
+                    <div class="category">Category</div>
+                    <a href="monthly.html"><div class="monthly">Monthly</div></a>
+                </div>
+
+                <div class="dropdown">
+                    <select>
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11" selected>December</option>
+                    </select>
+                </div>
+
+                <div class="daily-expense-container">
+                    <div class="day1">
+                        <div class="text">
+                            <h3>1</h3>
+                            <p>Fri</p>
+                        </div>
+
+                        <div class="expense-1">
+                            <div class="expense-content-left">
+                                <h3>Jeepney fare</h3>
+                                <p>Notes on this expense...</p>
+                            </div>
+
+                            <div class="expense-content-right">
+                                <h3>₱ 120.00</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
