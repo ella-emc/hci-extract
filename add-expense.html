@@ -27,8 +27,15 @@
                     <div class="basic-info-title">Basic info</div>
                     <div class="basic-info-input">
                         <label class="input">
-                            <span class="category-label">Category</span>
-                            <input class="textinput" type="text" placeholder="Enter an expense category"/>
+                            <span class="category">Category</span>
+                            <!-- <input class="textinput" type="text" placeholder="Enter an expense category"/> -->
+                            <select id="period">
+                                <option value="0" selected>Food</option>
+                                <option value="1">Utility</option>
+                                <option value="2">Credit/Debit</option>
+                                <option value="3">Transportation</option>
+                                <option value="4">Shopping</option>
+                            </select>
                         </label>
                         <label class="input">
                             <span class="name">Name</span>
