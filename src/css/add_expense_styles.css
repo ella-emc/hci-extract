@@ -62,4 +62,33 @@ body {
     letter-spacing: 0.5px;
     padding-bottom: 14px;
 }
+
+.basic-info-input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.textinput, select {
+    border-radius: 10px;
+    width: 170px;
+    border: solid 1px black;
+    padding: 6px 18px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span {
+    font-size: 10px;
+}
+
+select {
+    width: 207.6px;
+}
 /* END OF BASIC INFO CONTAINER */
+
