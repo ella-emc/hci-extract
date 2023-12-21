@@ -14,10 +14,13 @@ p {
     margin: 0;
 }
 
+.content {
+    position: relative;
+    z-index: 1;
+}
 
 .main-content {
     background: linear-gradient(358deg, #fefefe1a 75.87%, rgba(138, 79, 255, 0.10) 100.85%), #FFF;
-    position: relative;
 }
 
 /* NAV BAR */
@@ -268,4 +271,101 @@ label:active {
 .expense-toggle {
     left: 51%;
     top: 77%;
+}
+
+
+/* OVERLAY CONTAINER */
+.overlay-container {
+    position: relative;
+    z-index: 2;
+    top: -551px;
+    height: 650px;
+    width: 300.36px;
+    background: linear-gradient(180deg, rgba(220, 202, 255, 0.87) 0%, #8A4FFF 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.entire-container {
+    position: absolute;
+    top: 62%;
+    padding: 0px 16px;
+    color: #fff;
+}
+
+.add-category-button {
+    text-align: center;
+    color: #8A4FFF;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 54px;
+    letter-spacing: 1.155px;
+}
+
+.cancel {
+    text-align: center;
+    color: #FFF;
+    border: solid 1px white;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 54px;
+    margin-top: 12px;
+}
+
+.add-category-button:hover, .cancel:hover {
+    cursor: pointer;
+}
+
+.add-category-button:active {
+    background-color: #ccbdea;
+    color: #484848;
+}
+
+.category-title {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+label
+{
+    display: block;
+    margin: 10px 0;
+    font-size: 11px;
+}
+
+label span
+{
+    display: inline-block;
+    text-align: right;
+}
+
+.icon {
+    padding-right: 36px;
+}
+
+.category-label {
+    padding-right: 11px;
+}
+
+input {
+    border-radius: 10px;
+    border-style: none;
+    padding: 4px 8px;
+    width: 186px;
+}
+
+.input-container {
+    padding-bottom: 24px;
+}
+
+
+/* END OF OVERLAY CONTAINER */
+
+a {
+    text-decoration: none;
 }
