@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/expenses_styles.css">
+    <link rel="stylesheet" href="src/styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>ExTract - My Expenses</title>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="content">
+            <!-- THIS PART IS FOR THE NAVIGATION BAR -->
+            <div class="nav">
+                <a href="dashboard.html"><img src="assets/angle-left.png"></a>
+                <div>My Expenses</div>
+            </div>
+
+            <div class="main-content" id="main-content">
+                <div class="categories">
+                    <div class="category">Category</div>
+                    <a href="monthly.html"><div class="monthly">Monthly</div></a>
+                </div>
+
+                <div class="datepicker-container">
+                    <div class="datepicker">
+                        <input type="date" value="2022-12-01">
+                    </div>
+                </div>
+
+                <div class="expense-container">
+                    <div class="expense-header">
+                        <div>My Categories</div>
+                        <div class="filter">
+                            <img src="assets/filter.png">
+                            <div>Filter</div>
+                        </div>
+                    </div>
+
+                    <div class="category-container">
+                        <div class="category-each">
+                            <div class="name">
+                                <img src="assets/icons8-restaurant-50 1.png">
+                                <div>Food</div>
+                            </div>
+
+                            <div class="amount">
+                                <div>₱ 5,324</div>
+                            </div>
+                        </div>
+
+                        <div class="category-each">
+                            <div class="name">
+                                <img src="assets/icons8-utilities-50 2.png">
+                                <div>Utility</div>
+                            </div>
+
+                            <div class="amount">
+                                <div>₱ 11,999.00</div>
+                            </div>
+                        </div>
+
+                        <div class="category-each">
+                            <div class="name">
+                                <img src="assets/icons8-credit-card-50 1.png">
+                                <div>Credit/Debit</div>
+                            </div>
+
+                            <div class="amount">
+                                <div>₱ 3,000.00</div>
+                            </div>
+                        </div>
+
+                        <div class="category-each">
+                            <div class="name">
+                                <img src="assets/shirt-long-sleeve (1).png">
+                                <div>Credit/Debit</div>
+                            </div>
+
+                            <div class="amount">
+                                <div>₱ 899.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay-container">
+            <div class="entire-container">
+                <div class="category-title">New category</div>
+                <div class="input-container">
+                    <label class="input">
+                        <span class="category-label">Category</span>
+                        <input class="textinput" type="text" placeholder="Enter an expense category"/>
+                    </label>
+                    <label class="input">
+                        <span class="icon">Icon</span>
+                        <input class="textinput" type="text" placeholder="Enter custom icon"/>
+                    </label>
+                </div>
+
+                <a href="expenses.html"><div class="add-category-button">Add category</div></a>
+                <a href="expenses.html"><div class="cancel">Cancel</div></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
