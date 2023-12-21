@@ -223,7 +223,7 @@ label::before {
     opacity: 0;
     border-radius: 30px;
     pointer-events: none; /* Ensure that the pseudo-element is not clickable */
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in;
     z-index: 1;
 }
   
@@ -238,9 +238,26 @@ label::before {
 }
 
 /* TOGGLE CONTENT */
-.toggle-content {
-}
-
 .category-toggle, .expense-toggle {
     position: fixed;
+    z-index: 3;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 12px 22px;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: #484848;
+    width: 60px;
+    text-align: center;
+}
+
+.category-toggle {
+    left: 51%;
+    top: 68%;
+}
+
+.expense-toggle {
+    left: 51%;
+    top: 75%;
 }
