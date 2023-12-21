@@ -24,8 +24,8 @@
                 </div>
 
                 <div class="basic-info-container">
-                    <div class="basic-info-title">Basic info</div>
-                    <div class="basic-info-input">
+                    <div class="info-title">Basic info</div>
+                    <div class="info-input">
                         <label class="input">
                             <span class="category">Category</span>
                             <!-- <input class="textinput" type="text" placeholder="Enter an expense category"/> -->
@@ -51,8 +51,28 @@
                         </label>
                     </div>
                 </div>
+
+                <div class="addtl-info-container">
+                    <div class="info-title">Additional info</div>
+                    <div class="info-input">
+                        <label class="input">
+                            <button onclick="addFile()">Tap to upload file<img src="assets/clip.png"></button>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function addFile() {
+            let input = document.createElement('input');
+            input.type = 'file';
+            input.onchange = _ => {
+                let files =   Array.from(input.files);
+            };
+            input.click();      
+        }
+    </script>
 </body>
 </html>
