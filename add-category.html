@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/css/monthly_styles.css">
+    <title>ExTract - Monthly Expenses</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="content">
+            <!-- THIS PART IS FOR THE NAVIGATION BAR -->
+            <div class="nav">
+                <a href="dashboard.html"><img src="assets/angle-left.png"></a>
+                <div>My Expenses</div>
+            </div>
+
+            <div class="main-content" id="main-content">
+                <div class="categories">
+                    <div class="category">Category</div>
+                    <a href="monthly.html"><div class="monthly">Monthly</div></a>
+                </div>
+
+                <div class="dropdown">
+                    <select>
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11" selected>December</option>
+                    </select>
+                </div>
+
+                <div class="daily-expense-container">
+                    <div class="day">
+                        <div class="text">
+                            <h3>1</h3>
+                            <p>Fri</p>
+                        </div>
+                        
+                        <div class="expenses-container">
+                            <div class="expense-entry">
+                                <div class="expense-content-left">
+                                    <h3>Jeepney fare</h3>
+                                    <p>Notes on this expense...</p>
+                                </div>
+
+                                <div class="expense-content-right">
+                                    <h3>₱ 120.00</h3>
+                                </div>
+                            </div>
+
+                            <div class="expense-entry">
+                                <div class="expense-content-left">
+                                    <h3>7-11 sandwich</h3>
+                                    <p>Notes on this expense...</p>
+                                </div>
+
+                                <div class="expense-content-right">
+                                    <h3>₱ 59.00</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="day">
+                        <div class="text">
+                            <h3>2</h3>
+                            <p>Sat</p>
+                        </div>
+                        
+                        <div class="expenses-container">
+                            <div class="expense-entry">
+                                <div class="expense-content-left">
+                                    <h3>Jeepney fare</h3>
+                                    <p>Notes on this expense...</p>
+                                </div>
+
+                                <div class="expense-content-right">
+                                    <h3>₱ 30.00</h3>
+                                </div>
+                            </div>
+
+                            <div class="expense-entry">
+                                <div class="expense-content-left">
+                                    <h3>PLDT November bill</h3>
+                                    <p>Notes on this expense...</p>
+                                </div>
+
+                                <div class="expense-content-right">
+                                    <h3>₱ 1,299.00</h3>
+                                </div>
+                            </div>
+
+                            <div class="expense-entry">
+                                <div class="expense-content-left">
+                                    <h3>Maynilad November bill</h3>
+                                    <p>Notes on this expense...</p>
+                                </div>
+
+                                <div class="expense-content-right">
+                                    <h3>₱ 879.00</h3>
+                                </div>
+                            </div>
+
+                            <div class="expense-entry">
+                                <div class="expense-content-left">
+                                    <h3>Meralco November bill</h3>
+                                    <p>Notes on this expense...</p>
+                                </div>
+
+                                <div class="expense-content-right">
+                                    <h3>₱ 2,180.00</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="checkbox" id="toggle-button">
+                <label for="toggle-button">+</label>
+
+                <!-- TOGGLE CONTENT -->
+                <div class="toggle-content">
+                    <a href="add-category.html"><div class="category-toggle">Category</div></a>
+                    <a href="add-expense.html"><div class="expense-toggle">Expense</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
