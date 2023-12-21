@@ -204,7 +204,7 @@ label:active {
 }
   
   /* Style the label to look like a button */
-label {
+.add-button {
     display: inline-block;
     border-radius: 28px;
     color: #FFF;
@@ -220,7 +220,7 @@ label {
 }
   
   /* Define the gradient background */
-label::before {
+.add-button::before {
     content: "";
     position: absolute;
     bottom: -120px;
