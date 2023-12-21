@@ -47,3 +47,19 @@ body {
     letter-spacing: 0.5px;
 }
 /* END OF NEW EXPENSE */
+
+
+/* BASIC INFO CONTAINER */
+.basic-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.basic-info-title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-bottom: 14px;
+}
+/* END OF BASIC INFO CONTAINER */
