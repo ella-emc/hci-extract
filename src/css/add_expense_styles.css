@@ -27,3 +27,23 @@ body {
     width: 14px;
 }
 /* END OF NAVBAR */
+
+
+/* NEW EXPENSE */
+.new-expense {
+    margin: 24px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.new-expense {
+    background-color: #8a4fff;
+    color: #fff;
+    padding: 6px 0;
+    font-family: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+}
+/* END OF NEW EXPENSE */
