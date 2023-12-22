@@ -196,7 +196,7 @@ label:active {
 }
   
   /* Style the label to look like a button */
-label {
+.add-button {
     display: inline-block;
     border-radius: 28px;
     color: #FFF;
@@ -206,20 +206,20 @@ label {
     font-weight: 500;
     border-style: none;
     z-index: 2;
-    top: 145%;
+    top: 147%;
     left: 76%;
     position: absolute;
 }
   
   /* Define the gradient background */
-label::before {
+.add-button::before {
     content: "";
     position: absolute;
-    bottom: -120px;
+    bottom: -193px;
     left: -229px;
     width: 301px;
     height: 650px;
-    background: linear-gradient(to bottom, #c9aeff00 0%, #c9aeffbf 100%); /* Change the gradient colors as needed */
+    background: linear-gradient(to bottom, #c9aeff00 0%, #9e7ae7bf 100%); /* Change the gradient colors as needed */
     opacity: 0;
     border-radius: 30px;
     pointer-events: none; /* Ensure that the pseudo-element is not clickable */
@@ -254,10 +254,108 @@ label::before {
 
 .category-toggle {
     left: 51%;
-    top: 68%;
+    top: 70%;
 }
 
 .expense-toggle {
     left: 51%;
-    top: 75%;
+    top: 77%;
+}
+
+
+/* OVERLAY CONTAINER */
+.overlay-container {
+    position: relative;
+    z-index: 2;
+    top: -391px;
+    height: 650px;
+    width: 300.36px;
+    background: linear-gradient(180deg, rgba(220, 202, 255, 0.87) 0%, #8A4FFF 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.entire-container {
+    position: absolute;
+    top: 62%;
+    padding: 0px 16px;
+    color: #fff;
+}
+
+.add-category-button {
+    text-align: center;
+    color: #8A4FFF;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 54px;
+    letter-spacing: 1.155px;
+}
+
+.cancel {
+    text-align: center;
+    color: #FFF;
+    border: solid 1px white;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 54px;
+    margin-top: 12px;
+}
+
+.add-category-button:hover, .cancel:hover {
+    cursor: pointer;
+}
+
+.add-category-button:active {
+    background-color: #ccbdea;
+    color: #484848;
+}
+
+.category-title {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+label
+{
+    display: block;
+    margin: 10px 0;
+    font-size: 11px;
+}
+
+label span
+{
+    display: inline-block;
+    text-align: right;
+}
+
+.icon {
+    padding-right: 36px;
+}
+
+.category-label {
+    padding-right: 11px;
+}
+
+.textinput {
+    border-radius: 10px;
+    border-style: none;
+    padding: 4px 8px;
+    width: 186px;
+    background-color: #fff;
+}
+
+.input-container {
+    padding-bottom: 24px;
+}
+
+
+/* END OF OVERLAY CONTAINER */
+
+a {
+    text-decoration: none;
 }
