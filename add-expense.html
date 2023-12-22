@@ -12,7 +12,7 @@
         <div class="content">
             <!-- THIS PART IS FOR THE NAVIGATION BAR -->
             <div class="nav">
-                <a href="dashboard.html"><img src="assets/angle-left.png"></a>
+                <a href="expenses.html"><img src="assets/angle-left.png"></a>
                 <div>My Expenses</div>
             </div>
 
@@ -47,7 +47,7 @@
                         </label>
                         <label class="input">
                             <span class="date">Date</span>
-                            <input class="textinput" type="date" value="2023-12-22"/>
+                            <input class="textinput" id="date" type="date" value="2023-12-22"/>
                         </label>
                     </div>
                 </div>
@@ -56,10 +56,22 @@
                     <div class="info-title">Additional info</div>
                     <div class="info-input">
                         <label class="input">
-                            <button onclick="addFile()">Tap to upload file<img src="assets/clip.png"></button>
+                            <span class="attachment">Add an attachment</span>
+                            <button onclick="addFile()">Tap to upload file<img class="clip" src="assets/clip.png"></button>
+                        </label>
+                        <label class="input">
+                            <span class="scan">Scan a receipt</span>
+                            <button>Tap to scan receipt<img class="scan-icon" src="assets/qr-scan.png"></button>
+                        </label>
+                        <label class="input-notes">
+                            <span class="notes">Notes</span>
+                            <textarea rows="4" cols="33" placeholder="Enter remarks on the expense"></textarea>
                         </label>
                     </div>
                 </div>
+
+                <a href="monthly.html"><div class="add-expense-button">Add category</div></a>
+                <a href="expenses.html"><div class="cancel">Cancel</div></a>
             </div>
         </div>
     </div>
