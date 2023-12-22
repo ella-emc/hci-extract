@@ -22,7 +22,7 @@ body {
     width: 255px;
 }
 
-.nav img {
+.back {
     height: 14px;
     width: 14px;
 }
@@ -112,7 +112,7 @@ button:hover {
     cursor: pointer;
 }
 
-img {
+.clip, .scan-icon {
     height: 14px;
     width: 14px;
     padding-left: 48px;
